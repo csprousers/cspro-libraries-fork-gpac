@@ -3154,7 +3154,9 @@ void gf_fs_send_update(GF_FilterSession *fsess, const char *fid, GF_Filter *filt
 		if (sep) sep[0] = 0;
 	}
 	if (!strcmp(name, "LT")) {
+#ifndef GPAC_DISABLE_LOG
 		filter_parse_logs(filter, val);
+#endif
 		return;
 	}
 
