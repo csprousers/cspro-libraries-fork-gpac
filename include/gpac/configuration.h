@@ -1,3 +1,5 @@
+#define GPAC_CSPRO
+
 /*
  *			GPAC - Multimedia Framework C SDK
  *
@@ -39,6 +41,7 @@ This section documents the base data types of GPAC.
 #define GPAC_CONFIGURATION "(static configuration file)"
 
 
+#ifndef GPAC_CSPRO
 
 /*this file defines all common macros for libgpac compilation
   except for symbian32 which uses .mmp directives ... */
@@ -223,6 +226,7 @@ This section documents the base data types of GPAC.
 #error "Unknown target platform used with static configuration file"
 #endif
 
+#endif // !GPAC_CSPRO
 
 /*disables player */
 //#define GPAC_DISABLE_COMPOSITOR
