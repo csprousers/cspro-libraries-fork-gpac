@@ -111,7 +111,7 @@ REG_DEC(aout)
 REG_DEC(ufm4v)
 REG_DEC(ufvc1)
 REG_DEC(resample)
-#if !defined(GPAC_CONFIG_ANDROID)
+#if !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_CSPRO)
 REG_DEC(vout)
 #endif
 REG_DEC(vcrop)
@@ -127,7 +127,7 @@ REG_DEC(dasher)
 REG_DEC(tileagg)
 REG_DEC(tilesplit)
 
-#if !defined(GPAC_CONFIG_ANDROID)
+#if !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_CSPRO)
 REG_DEC(pin)
 REG_DEC(pout)
 #endif
@@ -136,7 +136,7 @@ REG_DEC(gsfdmx)
 REG_DEC(sockout)
 REG_DEC(rfav1)
 REG_DEC(ufobu)
-#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID)
+#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_CSPRO)
 REG_DEC(nvdec)
 #endif
 REG_DEC(routein)
@@ -150,7 +150,7 @@ REG_DEC(tssplit)
 REG_DEC(httpout)
 REG_DEC(uncvdec)
 
-#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_HAVE_DTAPI) && !defined(WIN32) 
+#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_HAVE_DTAPI) && !defined(WIN32) && !defined(GPAC_CSPRO)
 REG_DEC(dtout)
 #endif
 
@@ -276,7 +276,7 @@ BuiltinReg BuiltinFilters [] = {
 	REG_IT(ufm4v),
 	REG_IT(ufvc1),
 	REG_IT(resample),
-#if !defined(GPAC_CONFIG_ANDROID)
+#if !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_CSPRO)
 	REG_IT(vout),
 #endif
 	REG_IT(vcrop),
@@ -291,7 +291,7 @@ BuiltinReg BuiltinFilters [] = {
 	REG_IT(dasher),
 	REG_IT(tileagg),
 	REG_IT(tilesplit),
-#if !defined(GPAC_CONFIG_ANDROID)
+#if !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_CSPRO)
 	REG_IT(pin),
 	REG_IT(pout),
 #endif
@@ -300,7 +300,7 @@ BuiltinReg BuiltinFilters [] = {
 	REG_IT(sockout),
 	REG_IT(rfav1),
 	REG_IT(ufobu),
-#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID)
+#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_CSPRO)
 	REG_IT(nvdec),
 #endif
 	REG_IT(routein),
@@ -355,7 +355,7 @@ BuiltinReg BuiltinFilters [] = {
 	REG_IT(wcenc),
 	REG_IT(webgrab),
 #endif
-#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_HAVE_DTAPI) && !defined(WIN32)
+#if !defined(GPAC_CONFIG_IOS) && !defined(GPAC_CONFIG_ANDROID) && !defined(GPAC_HAVE_DTAPI) && !defined(WIN32) && !defined(GPAC_CSPRO)
 	REG_IT(dtout),
 #endif
 };
