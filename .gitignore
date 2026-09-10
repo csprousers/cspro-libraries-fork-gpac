@@ -79,7 +79,7 @@ bld/
 
 #GPAC specific
 config.h
-include/gpac/revision.h
+#include/gpac/revision.h
 include/gpac/revision.h.new
 extra_lib/
 config.mak

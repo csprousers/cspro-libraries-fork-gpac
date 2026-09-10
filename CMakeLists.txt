@@ -410,7 +410,7 @@ add_library(${PROJECT_NAME}
 )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE
-    GPAC_CSPRO
+    GPAC_CSPRO=
 
     GPAC_MP4BOX_MINI=
 
